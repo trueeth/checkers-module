@@ -21,7 +21,7 @@ buf generate --template buf.gen.pulsar.yaml
 
 cd ..
 
-# cp -r github.com/trueeth/checkers-module/* ./
+cp -r github.com/trueeth/checkers-module/* ./
 rm -rf api && mkdir api
 mv trueeth/checkers/* ./api
 rm -rf github.com trueeth
