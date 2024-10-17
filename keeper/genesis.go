@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"github.com/trueeth/checkers"
+	"github.com/trueeth/checkers-module"
 )
 
 // InitGenesis initializes the module state from a genesis state.

@@ -8,7 +8,7 @@ import (
 	storetypes "cosmossdk.io/core/store"
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	"github.com/trueeth/checkers"
+	"github.com/trueeth/checkers-module"
 )
 
 type Keeper struct {
