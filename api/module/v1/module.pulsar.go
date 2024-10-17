@@ -20,7 +20,7 @@ var (
 
 func init() {
 	file_trueeth_checkers_module_v1_module_proto_init()
-	md_Module = File_trueeth_checkers_module_v1_module_proto.Messages().ByName("module")
+	md_Module = File_trueeth_checkers_module_v1_module_proto.Messages().ByName("Module")
 	fd_Module_authority = md_Module.Fields().ByName("authority")
 }
 
@@ -110,13 +110,13 @@ func (x *fastReflection_Module) Range(f func(protoreflect.FieldDescriptor, proto
 // a repeated field is populated if it is non-empty.
 func (x *fastReflection_Module) Has(fd protoreflect.FieldDescriptor) bool {
 	switch fd.FullName() {
-	case "trueeth.checkers.module.v1.module.authority":
+	case "trueeth.checkers.module.v1.Module.authority":
 		return x.Authority != ""
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.module"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.Module"))
 		}
-		panic(fmt.Errorf("message trueeth.checkers.module.v1.module does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message trueeth.checkers.module.v1.Module does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -128,13 +128,13 @@ func (x *fastReflection_Module) Has(fd protoreflect.FieldDescriptor) bool {
 // Clear is a mutating operation and unsafe for concurrent use.
 func (x *fastReflection_Module) Clear(fd protoreflect.FieldDescriptor) {
 	switch fd.FullName() {
-	case "trueeth.checkers.module.v1.module.authority":
+	case "trueeth.checkers.module.v1.Module.authority":
 		x.Authority = ""
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.module"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.Module"))
 		}
-		panic(fmt.Errorf("message trueeth.checkers.module.v1.module does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message trueeth.checkers.module.v1.Module does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -146,14 +146,14 @@ func (x *fastReflection_Module) Clear(fd protoreflect.FieldDescriptor) {
 // of the value; to obtain a mutable reference, use Mutable.
 func (x *fastReflection_Module) Get(descriptor protoreflect.FieldDescriptor) protoreflect.Value {
 	switch descriptor.FullName() {
-	case "trueeth.checkers.module.v1.module.authority":
+	case "trueeth.checkers.module.v1.Module.authority":
 		value := x.Authority
 		return protoreflect.ValueOfString(value)
 	default:
 		if descriptor.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.module"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.Module"))
 		}
-		panic(fmt.Errorf("message trueeth.checkers.module.v1.module does not contain field %s", descriptor.FullName()))
+		panic(fmt.Errorf("message trueeth.checkers.module.v1.Module does not contain field %s", descriptor.FullName()))
 	}
 }
 
@@ -169,13 +169,13 @@ func (x *fastReflection_Module) Get(descriptor protoreflect.FieldDescriptor) pro
 // Set is a mutating operation and unsafe for concurrent use.
 func (x *fastReflection_Module) Set(fd protoreflect.FieldDescriptor, value protoreflect.Value) {
 	switch fd.FullName() {
-	case "trueeth.checkers.module.v1.module.authority":
+	case "trueeth.checkers.module.v1.Module.authority":
 		x.Authority = value.Interface().(string)
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.module"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.Module"))
 		}
-		panic(fmt.Errorf("message trueeth.checkers.module.v1.module does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message trueeth.checkers.module.v1.Module does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -191,13 +191,13 @@ func (x *fastReflection_Module) Set(fd protoreflect.FieldDescriptor, value proto
 // Mutable is a mutating operation and unsafe for concurrent use.
 func (x *fastReflection_Module) Mutable(fd protoreflect.FieldDescriptor) protoreflect.Value {
 	switch fd.FullName() {
-	case "trueeth.checkers.module.v1.module.authority":
-		panic(fmt.Errorf("field authority of message trueeth.checkers.module.v1.module is not mutable"))
+	case "trueeth.checkers.module.v1.Module.authority":
+		panic(fmt.Errorf("field authority of message trueeth.checkers.module.v1.Module is not mutable"))
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.module"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.Module"))
 		}
-		panic(fmt.Errorf("message trueeth.checkers.module.v1.module does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message trueeth.checkers.module.v1.Module does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -206,13 +206,13 @@ func (x *fastReflection_Module) Mutable(fd protoreflect.FieldDescriptor) protore
 // For lists, maps, and messages, this returns a new, empty, mutable value.
 func (x *fastReflection_Module) NewField(fd protoreflect.FieldDescriptor) protoreflect.Value {
 	switch fd.FullName() {
-	case "trueeth.checkers.module.v1.module.authority":
+	case "trueeth.checkers.module.v1.Module.authority":
 		return protoreflect.ValueOfString("")
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.module"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: trueeth.checkers.module.v1.Module"))
 		}
-		panic(fmt.Errorf("message trueeth.checkers.module.v1.module does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message trueeth.checkers.module.v1.Module does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -222,7 +222,7 @@ func (x *fastReflection_Module) NewField(fd protoreflect.FieldDescriptor) protor
 func (x *fastReflection_Module) WhichOneof(d protoreflect.OneofDescriptor) protoreflect.FieldDescriptor {
 	switch d.FullName() {
 	default:
-		panic(fmt.Errorf("%s is not a oneof field in trueeth.checkers.module.v1.module", d.FullName()))
+		panic(fmt.Errorf("%s is not a oneof field in trueeth.checkers.module.v1.Module", d.FullName()))
 	}
 	panic("unreachable")
 }
@@ -446,11 +446,15 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
+// Module is the app config object of the module.
+// Learn more: https://docs.cosmos.network/main/building-modules/depinject
 type Module struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
+	// authority defines the custom module authority.
+	// if not set, defaults to the governance module.
 	Authority string `protobuf:"bytes,1,opt,name=authority,proto3" json:"authority,omitempty"`
 }
 
@@ -490,7 +494,7 @@ var file_trueeth_checkers_module_v1_module_proto_rawDesc = []byte{
 	0x74, 0x68, 0x2e, 0x63, 0x68, 0x65, 0x63, 0x6b, 0x65, 0x72, 0x73, 0x2e, 0x6d, 0x6f, 0x64, 0x75,
 	0x6c, 0x65, 0x2e, 0x76, 0x31, 0x1a, 0x20, 0x63, 0x6f, 0x73, 0x6d, 0x6f, 0x73, 0x2f, 0x61, 0x70,
 	0x70, 0x2f, 0x76, 0x31, 0x61, 0x6c, 0x70, 0x68, 0x61, 0x31, 0x2f, 0x6d, 0x6f, 0x64, 0x75, 0x6c,
-	0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x4b, 0x0a, 0x06, 0x6d, 0x6f, 0x64, 0x75, 0x6c,
+	0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x4b, 0x0a, 0x06, 0x4d, 0x6f, 0x64, 0x75, 0x6c,
 	0x65, 0x12, 0x1c, 0x0a, 0x09, 0x61, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x74, 0x79, 0x18, 0x01,
 	0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x61, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x74, 0x79, 0x3a,
 	0x23, 0xba, 0xc0, 0x96, 0xda, 0x01, 0x1d, 0x0a, 0x1b, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e,
@@ -528,7 +532,7 @@ func file_trueeth_checkers_module_v1_module_proto_rawDescGZIP() []byte {
 
 var file_trueeth_checkers_module_v1_module_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_trueeth_checkers_module_v1_module_proto_goTypes = []interface{}{
-	(*Module)(nil), // 0: trueeth.checkers.module.v1.module
+	(*Module)(nil), // 0: trueeth.checkers.module.v1.Module
 }
 var file_trueeth_checkers_module_v1_module_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

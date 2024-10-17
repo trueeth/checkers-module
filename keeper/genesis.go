@@ -6,9 +6,8 @@ import (
 	"github.com/trueeth/checkers"
 )
 
-// InitGenesis initializes the module state from a genesis state
+// InitGenesis initializes the module state from a genesis state.
 func (k *Keeper) InitGenesis(ctx context.Context, data *checkers.GenesisState) error {
-
 	if err := k.Params.Set(ctx, data.Params); err != nil {
 		return err
 	}
@@ -16,9 +15,8 @@ func (k *Keeper) InitGenesis(ctx context.Context, data *checkers.GenesisState) e
 	return nil
 }
 
-// ExportGenesis exports the module state to a genesis state
+// ExportGenesis exports the module state to a genesis state.
 func (k *Keeper) ExportGenesis(ctx context.Context) (*checkers.GenesisState, error) {
-
 	params, err := k.Params.Get(ctx)
 	if err != nil {
 		return nil, err
