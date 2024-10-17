@@ -1,7 +1,7 @@
 syntax = "proto3";
 package trueeth.checkers.v1;
 
-option go_package = "github.com/trueeth/checkers";
+option go_package = "github.com/trueeth/checkers-module";
 
 import "cosmos_proto/cosmos.proto";
 import "gogoproto/gogo.proto";
@@ -13,4 +13,21 @@ message Params {}
 message GenesisState {
   // params defines all the parameters of the module.
   Params params = 1 [ (gogoproto.nullable) = false ];
+
+  repeated IndexedStoredGame indexedStoredGameList = 2
+      [ (gogoproto.nullable) = false ];
+}
+
+// stored game
+message StoredGame {
+  string board = 1;
+  string turn = 2;
+  string black = 3 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+  string red = 4 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+}
+
+// indexed stored game
+message IndexedStoredGame {
+  string index = 1;
+  StoredGame storedGame = 2 [ (gogoproto.nullable) = false ];
 }
