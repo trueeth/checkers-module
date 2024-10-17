@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+package trueeth.checkers.module.v1;
+
+import "cosmos/app/v1alpha1/module.proto";
+
+message module {
+    option (cosmos.app.v1alpha1.module) = {
+        go_import : "github.com/trueeth/checkers"
+    };
+
+    string authority = 1;
+}
