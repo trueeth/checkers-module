@@ -1,4 +1,4 @@
-module github.com/trueeth/checkers
+module github.com/trueeth/checkers-module
 
 go 1.21
 

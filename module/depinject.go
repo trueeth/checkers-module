@@ -9,8 +9,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	modulev1 "github.com/trueeth/checkers/api/module/v1"
-	"github.com/trueeth/checkers/keeper"
+	modulev1 "github.com/trueeth/checkers-module/api/module/v1"
+	"github.com/trueeth/checkers-module/keeper"
 )
 
 var _ appmodule.AppModule = AppModule{}
